@@ -17,7 +17,6 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
     if (preferences[third] === 0) continue;
 
     let thirdLoves = preferences[third] - 1;
-    console.log(first, second, third);
     if (thirdLoves === first) {
       preferences[first] = preferences[second] = preferences[third] = 0;
       result++;
